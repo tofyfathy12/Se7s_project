@@ -95,8 +95,6 @@ public class ItemManager {
         }
         System.out.println("--------------------------------------------------\n");
     }
-        
-    
 
     public void updateItem(int ID, String newName, String newDescription, String newCategory, String newPriority) {
 
