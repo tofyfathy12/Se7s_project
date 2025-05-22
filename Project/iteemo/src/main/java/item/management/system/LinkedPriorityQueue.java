@@ -30,6 +30,10 @@ class PQNode<E> {
     public void setNext(PQNode<E> newNext) {
         next = newNext;
     }
+
+    public Item getElement() {
+        return (Item) data;
+    }
 }
 
 public class LinkedPriorityQueue<E> implements IPriorityQueue<E> {
@@ -75,4 +79,7 @@ public class LinkedPriorityQueue<E> implements IPriorityQueue<E> {
         }
     }
 
+    public PQNode <E> getHead() {
+        return head;
+    }
 }
