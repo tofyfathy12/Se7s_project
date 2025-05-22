@@ -86,16 +86,15 @@ public class ItemManager {
     }
 
     public void viewAllItems() {
-    System.out.println("--------------------------------------------------");
-    System.out.printf("| %-4s | %-15s | %-20s | %-15s |\n", "ID", "Name", "Description", "Category");
-    System.out.println("--------------------------------------------------");
-    PQNode<Item> curr = itemsPQ.getHead();
-    while (curr != null) {
-        System.out.printf("| %-4d | %-15s | %-20s | %-15s |\n", curr.getElement().getID(), curr.getElement().getName(), curr.getElement().getDesc(), curr.getElement().getCategory());
-    }
-    System.out.println("--------------------------------------------------");
-            System.out.println();
+        System.out.println("--------------------------------------------------");
+        System.out.printf("| %-4s | %-15s | %-20s | %-15s |\n", "ID", "Name", "Description", "Category");
+        System.out.println("--------------------------------------------------");
+        PQNode<Item> curr = itemsPQ.getHead();
+        while (curr != null) {
+            System.out.printf("| %-4d | %-15s | %-20s | %-15s |\n", curr.getElement().getID(), curr.getElement().getName(), curr.getElement().getDesc(), curr.getElement().getCategory());
         }
+        System.out.println("--------------------------------------------------\n");
+    }
         
     
 
